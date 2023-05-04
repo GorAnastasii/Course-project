@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ART</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Montserrat&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <button class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <a href="index.html" class="logo">
+                    <img src="images/logo3.svg" alt="">
+                </a>
+                <div class="nav__menu">
+                    <ul class="menu">
+                        <li class="menu__list"><a href="#info__section" class="menu__link">О НАС</a></li>
+                        <li class="menu__list"><a href="#exhibition__section" class="menu__link">ВЫСТАВКИ</a></li>
+                        <li class="menu__list"><a href="#event__section" class="menu__link">МЕРОПРИЯТИЯ</a></li>
+                    </ul>
+                    <a href="ticket.html" class="basket" >
+                        <img src="images/basket.svg" alt="">
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <section class="top">
+            <div class="container">
+                <h1 class="title">Современная <span class="title__span">галерея</span> искусств</h1>
+                <p class="subtitle">Место, в которое тебе стоит попасть</p>
+                <p class="top__text">Выставка "Оптические среды" пройдет до 30/04/2022. Успей купить билет!</p>
+            
+                <button class="buy-btn" onClick='location.href="ticket.html"'>ЗАКАЗАТЬ БИЛЕТ</button>
+            </div>
+        </section>
+
+        <section class="info" id="info__section">
+            <div class="container">
+                <h2 class="info__title section-title">ИНФОРМАЦИЯ О НАС</h2>
+                <div class="info__content">
+                    <div class="info__text">
+                        <p class="info__header">Новые тенденции искусства</p>
+                        <p class="info__informain">Современная галерея искусств - это место, где можно насладиться 
+                            искусством в его различных проявлениях.
+                        </p>
+                    </div>
+
+                    <div class="info__slider">
+                        <div class="slide" style="background-image: url(images/slide1.jpg);">
+                            <p>Большая коллекция экспонатов</p>
+                        </div>
+
+                        <div class="slide" style="background-image: url(images/slide2.jpg);">
+                            <p>Красивые выстовочные залы</p>
+                        </div>
+
+                        <div class="slide" style="background-image: url(images/slide3.jpg);">
+                            <p>Спокойная атмосфера</p>
+                        </div>
+
+                        <div class="slide" style="background-image: url(images/slide4.jpg);">
+                            <p>Самые новые картины</p>
+                        </div>
+
+                        <div class="slide" style="background-image: url(images/slide5.jpg);">
+                            <p>Хорошее настроение</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="exhibition" id="exhibition__section">
+            <div class="container">
+                <h2 class="section-title exhib__title">ВЫСТАВКИ</h2>
+                <div class="exhibition__inner">
+                    <div class="descr">
+                        <p class="descr-title">Выставка современного искусства</p>
+                        <p class="descr-text">это возможность увидеть и оценить произведения творческих личностей нашего времени и оценить их влияние на мир искусства.</p>
+                    </div>
+
+                    <div class="exh__item">
+                        <img class="exh__item-img" src="images/exhib1.jpg" alt="">
+                        <h3 class="exh__item-title">VR Gallery</h3>
+                        <p class="exh__item-text">Путешествие в известные полотна и виртуальные галереи...</p>
+                        <a href="exhibition.html#1" class="exh__item-link">ПОДРОБНЕЕ</a>
+                    </div>
+                    <div class="exh__item">
+                        <img class="exh__item-img" src="images/exhib2.jpg" alt="">
+                        <h3 class="exh__item-title">Оптические среды</h3>
+                        <p class="exh__item-text">Московский музей современного искусства представляет персональный проект художника...</p>
+                        <a href="exhibition.html#2" class="exh__item-link">ПОДРОБНЕЕ</a>
+                    </div>
+                    <div class="exh__item">
+                        <img class="exh__item-img" src="images/exhib3.jpg" alt="">
+                        <h3 class="exh__item-title">Games people play</h3>
+                        <p class="exh__item-text">Новая выставка представляет собой неординарное высказывание в жанре pop-art, яркий всплеск искусства...</p>
+                        <a href="exhibition.html#3" class="exh__item-link">ПОДРОБНЕЕ</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="buy">
+            <p class="buy__bg">modern</p>
+            <img src="images/modern.png" alt="" class="buy__img">
+            <button class="buy-btn" onClick='location.href="ticket.html"'>ЗАКАЗАТЬ БИЛЕТ</button>
+        </div>
+
+        <section class="event" id="event__section">
+            <div class="container">
+                <h2 class="section-title event__title">МЕРОПРИЯТИЯ</h2>
+                <div class="events">
+                    <div class="events__item event__item1">
+                        <a href="event.html" class="events__link"><img src="images/events1.jpg" alt="" class="events__img"></a>
+                        <p class="events__text">Экспозиция Музея космонавтики</p>
+                    </div>
+                    <div class="events__item">
+                        <a href="event.html" class="events__link"><img src="images/events2.jpg" alt="" class="events__img"></a>
+                        <p class="events__text">Эстетика мира насекомых</p>
+                    </div>
+                    <div class="events__item">
+                        <p class="events__title">Новое и интересное</p>
+                    </div>
+                    <div class="events__item">
+                        <a href="event.html" class="events__link"><img src="images/events3.jpg" alt="" class="events__img"></a>
+                        <p class="events__text">Арт-вечеринка Painty</p>
+                    </div>
+                    <div class="events__item">
+                        <a href="event.html" class="events__link"><img src="images/events4.jpg" alt="" class="events__img"></a>
+                        <p class="events__text">Реальный космос</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <div class="promo">
+            <div class="container">
+                <div class="promo__inner">
+                    <button class="buy-btn promo__btn" onClick='location.href="ticket.html"'>ЗАКАЗАТЬ БИЛЕТ</button>
+                </div>
+            </div>
+        </div>
+
+        <section class="contacts">
+            <div class="container">
+                <h2 class="contacts__title">Связь с нами!</h2>
+                <div class="contacts__inner">
+                    <div class="contacts__form">
+                        <form class="form">
+                            <input class="form__input" type="text" placeholder="Написать...">
+                            <button class="form__btn" type="submit">go</button>
+                        </form>
+                        <p class="contacts__text">В случае проблем с заказом билета можете написать нам с указанием вашей почты. Мы с вами свяжемся в ближайшее время. Спасибо!</p>
+                    </div>
+                    <a href="#" class="contacts__email">modernart@gmail.com</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <nav class="nav">
+                <ul class="menu">
+                    <li class="menu__list"><a href="#info__section" class="menu__link">О НАС</a></li>
+                    <li class="menu__list"><a href="#exhibition__section" class="menu__link">ВЫСТАВКИ</a></li>
+                    <li class="menu__list"><a href="#event__section" class="menu__link">МЕРОПРИЯТИЯ</a></li>
+                </ul>
+                <a href="index.html" class="logo">
+                    <img src="images/logo3.svg" alt="">
+                </a>
+                <ul class="social">
+                    <li class="social__item">
+                        <a href="https://www.youtube.com/" class="sotial__link">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.5047 14.7391L13.9953 13.1016C13.6891 12.9594 13.4375 13.1187 13.4375 13.4578V16.5422C13.4375 16.8813 13.6891 17.0406 13.9953 16.8984L17.5031 15.2609C17.8109 15.1172 17.8109 14.8828 17.5047 14.7391ZM15 0C6.71562 0 0 6.71562 0 15C0 23.2844 6.71562 30 15 30C23.2844 30 30 23.2844 30 15C30 6.71562 23.2844 0 15 0ZM15 21.0938C7.32188 21.0938 7.1875 20.4016 7.1875 15C7.1875 9.59844 7.32188 8.90625 15 8.90625C22.6781 8.90625 22.8125 9.59844 22.8125 15C22.8125 20.4016 22.6781 21.0938 15 21.0938Z" fill="#5C5C5E"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="https://www.facebook.com/" class="sotial__link">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 0C6.7155 0 0 6.75638 0 15.0913C0 22.6234 5.4855 28.8666 12.657 30V19.4527H8.847V15.0913H12.657V11.7667C12.657 7.98481 14.895 5.89617 18.3225 5.89617C19.9635 5.89617 21.6795 6.19045 21.6795 6.19045V9.90291H19.7895C17.925 9.90291 17.3445 11.0665 17.3445 12.2602V15.0913H21.504L20.8395 19.4527H17.3445V30C24.5145 28.8682 30 22.6219 30 15.0913C30 6.75638 23.2845 0 15 0Z" fill="#5C5C5E"/>
+                            </svg> 
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="https://www.instagram.com/" class="sotial__link">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 0C6.66667 0 0 6.66667 0 15C0 23.3333 6.66667 30 15 30C23.3333 30 30 23.3333 30 15C30 6.66667 23.3333 0 15 0ZM15 11.6667C16.8333 11.6667 18.3333 13.1667 18.3333 15C18.3333 16.8333 16.8333 18.3333 15 18.3333C13.1667 18.3333 11.6667 16.8333 11.6667 15C11.6667 13.1667 13.1667 11.6667 15 11.6667ZM19.6667 8.33333C19.6667 7.16667 20.6667 6.33333 21.6667 6.33333C22.6667 6.33333 23.6667 7.33333 23.6667 8.33333C23.6667 9.33333 22.8333 10.3333 21.6667 10.3333C20.5 10.3333 19.6667 9.5 19.6667 8.33333ZM15 26.6667C8.5 26.6667 3.33333 21.5 3.33333 15H8.33333C8.33333 18.6667 11.3333 21.6667 15 21.6667C18.6667 21.6667 21.6667 18.6667 21.6667 15H26.6667C26.6667 21.5 21.5 26.6667 15 26.6667Z" fill="#5C5C5E"/>
+                            </svg> 
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>

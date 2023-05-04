@@ -1,0 +1,161 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/ticket-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section__btn {
+  position: absolute;
+  cursor: pointer;
+  border: none;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  left: 10%;
+  top: 12%;
+  background: linear-gradient(180deg, #BC10D8 0%, #5000FA 100%);
+}
+.section__btn .btn__arrow {
+  width: 60%;
+}
+.section__btn:hover {
+  background: linear-gradient(180deg, rgba(164, 14, 187, 0.8) 0%, rgba(74, 0, 233, 0.8) 100%);
+}
+
+.container {
+  max-width: 700px;
+  max-height: 700px;
+  background-color: #FDF1FF;
+  border: none;
+  border-radius: 50px;
+  padding: 34px;
+}
+.container h2 {
+  font-family: "Poppins", sans-serif;
+  color: #212B27;
+  font-weight: bold;
+  font-size: 32px;
+  text-align: center;
+}
+.container p {
+  color: #32403B;
+  font-weight: normal;
+  font-size: 16px;
+  text-align: center;
+}
+
+.section__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.section__form input {
+  width: 350px;
+  height: 44px;
+  padding: 18px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 14px;
+  margin: 8px 0;
+  outline: none;
+}
+.section__form input:focus {
+  border: 1px solid #BC10D8;
+}
+.section__form input:hover {
+  background-color: #f3f3f3;
+}
+.section__form select {
+  width: 350px;
+  height: 44px;
+  padding: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 14px;
+  margin: 8px 0;
+  color: #757575;
+  outline: none;
+}
+.section__form select:focus {
+  border: 1px solid #BC10D8;
+}
+.section__form select:hover {
+  background-color: #f3f3f3;
+}
+.section__form .buy-btn {
+  cursor: pointer;
+  width: 220px;
+  height: 50px;
+  background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.84) 100%);
+  border-radius: 24px;
+  border: none;
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 18px;
+  margin: 4px;
+}
+.section__form .buy-btn:hover {
+  background: linear-gradient(180deg, rgb(145, 8, 167) 0%, rgb(64, 1, 199) 100%);
+}
+
+@media (max-width: 484px) {
+  .section__btn {
+    left: 8%;
+  }
+  .container {
+    max-width: 460px;
+    padding: 20px 30px;
+  }
+  .section__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .section__form input {
+    width: 250px;
+  }
+  .section__form select {
+    width: 250px;
+  }
+  .section__form .buy-btn {
+    width: 150px;
+  }
+}
