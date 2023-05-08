@@ -63,12 +63,6 @@ body{
     justify-content: space-between;
     background: none;
     border: none;
-    span{
-        width: 100%;
-        border-radius: 2px;
-        border: 3px solid $black;
-        background-color: $black;
-    }
 }
 
 .nav__menu{
@@ -550,7 +544,6 @@ body{
     }
 
     .nav__menu{
-        //display: none;
         transform: translateX(-100%);
         transition: transform 2s ease;
         position:absolute;
@@ -558,9 +551,9 @@ body{
         top: 80px;
         left: 0;
         right: 0;
-        width: 60%;
+        width: 100%;
         padding: 80px 20px;
-        background: linear-gradient(180deg, rgba(145, 8, 167, 0.8) 0%, rgb(64, 1, 199, 0.8) 100%);
+        background: linear-gradient(180deg, rgba(145, 8, 167, 0.9) 0%, rgb(64, 1, 199, 0.9) 100%);
         color: #fff;
     }
     .nav__menu .menu{
@@ -568,14 +561,58 @@ body{
         flex-direction: column;
         font-size: 14px;
     }
+    .menu__list{
+        margin: 5px 0;
+    }
     .nav__menu .basket{
         display: none;
     }
     .active{
-        //display: flex;
         transform: translateX(0%);
     }
+    .burger-button {
+        display: block;
+        width: 100px;                           
+        height: 100px;                                                           
+        opacity: 1;                               
+    }
+    .burger-button span,
+    .burger-button span::before,
+    .burger-button span::after {
+        position: absolute;
+        top: 7%;                   
+        width: 55px;                              
+        height: 7px;                              
+        background-color: $btn-gradient1;                   
+        border-radius: 100px;                     
+    }
 
+    .burger-button span::before,
+    .burger-button span::after {
+        content: '';
+        display: block;
+        transition: 0.1s;
+    }
+
+    .burger-button span::before {
+        transform: translateY(-16px);    
+    }
+    .burger-button span::after {       
+        transform: translateY(15px);     
+    }
+    .burgermenu_active span {         
+        height: 0;
+    }
+      
+    .burgermenu_active span:before {    
+        transform: rotate(45deg);
+        background-color: $btn-gradient1;
+    }
+    .burgermenu_active span:after {   
+        transform: rotate(-45deg);
+        background-color: $btn-gradient1;
+    } 
+      
     .contacts{
         &__inner{
             display: flex;
@@ -588,7 +625,6 @@ body{
         &__text{
             font-size: 14px;
         }
-    }
 }
 
 @media (max-width:768px) {
