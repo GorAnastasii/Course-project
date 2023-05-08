@@ -17,5 +17,6 @@ const menuBtn = document.querySelector('.menu-btn');
 const menu = document.querySelector('.nav__menu');
 
 menuBtn.addEventListener('click', () => {
+  menuBtn.classList.toggle('burgermenu_active');
   menu.classList.toggle('active');
 })
